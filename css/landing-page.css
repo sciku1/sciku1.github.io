@@ -12,6 +12,11 @@ h6 {
   font-weight: 700;
 }
 
+.problem-statement {
+  align-self: center;
+  padding: 25px;
+}
+
 header.masthead {
   position: relative;
   background-color: #343a40;
