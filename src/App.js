@@ -84,7 +84,7 @@ class App extends Component {
         <ThemeProvider theme={theme}>
             <Box className="App" bg="n800">
                 <Nav />
-                <Box p={4} mw="960px" mx="auto">
+                <Box p={4} mw="1080px" mx="auto">
                     <Header />
                     <Flex
                         p={[4, 6]}
