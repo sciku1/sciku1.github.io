@@ -140,6 +140,7 @@ footer.footer {
 .course-image {
   background-size: cover;
   height: 130px;
+  margin-bottom: 12px;
   background-position: center center;
   width: 100%;
 }

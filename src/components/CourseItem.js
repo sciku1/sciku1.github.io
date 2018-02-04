@@ -24,11 +24,8 @@ class CourseItem extends PureComponent {
             <div className="course-image" style={{
                 backgroundImage: `url(${image})`
             }} />
-            <Text small mb={3}>
-                <ul>
-                    {objectives.map( (objective, index) => <li key={index}>{objective}</li>)}
-                </ul>
-            </Text>
+
+                {objectives.map( (objective, index) => <Text small mb={2} style={{ textAlign: "center" }} key={index}>{objective}</Text>)}
             <Button onClick={onClick} w="100%" children="See course" style={{marginTop: 'auto'}} intent="success" />
         </Flex>
     }
