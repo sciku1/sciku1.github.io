@@ -21,7 +21,9 @@ class CourseItem extends PureComponent {
         const { onClick, item: { name, objectives, image } } = this.props;
         return <Flex px={4} py={3} bg="n0" w="100%" mx={1} direction="column">
             <Text large mb={3} fontWeight="600">{name}</Text>
-            <Image src={image} />
+            <div className="course-image" style={{
+                backgroundImage: `url(${image})`
+            }} />
             <Text small mb={3}>
                 <ul>
                     {objectives.map( (objective, index) => <li key={index}>{objective}</li>)}

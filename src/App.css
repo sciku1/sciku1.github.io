@@ -136,3 +136,10 @@ footer.footer {
 .course-list .content.open {
   height: 500px;
 }
+
+.course-image {
+  background-size: cover;
+  height: 130px;
+  background-position: center center;
+  width: 100%;
+}
