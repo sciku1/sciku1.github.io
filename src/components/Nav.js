@@ -15,9 +15,13 @@ class Nav extends PureComponent {
         return (
             <Flex
                 align="center"
-                mb={7}
+                justify="space-between"
+                py={3}
+                px={4}
+                bg="n20"
             >
-                
+              <Text fontWeight="600" fontSize="20px" lineHeight="24px">VRify</Text>
+              <Button small children="Get Started" intent="success" />
             </Flex>
         );
     }

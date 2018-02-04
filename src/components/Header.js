@@ -15,7 +15,7 @@ class Header extends PureComponent {
         return (
             <Flex
                 align="center"
-                mb={7}
+                my={9}
             >
                 <Box width="50%" mr={[3, 6]}>
                     <Text
