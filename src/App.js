@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import CourseList from './containers/CourseList';
+import Header from './components/Header'
+import Nav from './components/Nav'
 import { injectGlobal, ThemeProvider } from 'styled-components'
 import theme from './theme'
 import {
@@ -71,13 +73,16 @@ class App extends Component {
   render() {
     return (
         <ThemeProvider theme={theme}>
-            <div className="App">
-
-                <Box p={4} mw="960px" mx="auto" bg="n100">
-                    <Box mw="960px" mx="auto">
-                        <Text>Test</Text>
-                    </Box>
-                    <Flex p={[4, 6]} bg="g300" justify="space-between">
+            <Box className="App" bg="n800">
+                <Nav />
+                <Box p={4} mw="960px" mx="auto">
+                    <Header />
+                    <Flex
+                        p={[4, 6]}
+                        bg="g300"
+                        justify="space-between"
+                        style={{borderRadius: '4px'}}
+                    >
                         <Flex align="center">
                             <Icon type="Zap" color="white" />
                             <Text ml={2} large fontWeight="600">Equipment Simulators</Text>
@@ -93,7 +98,7 @@ class App extends Component {
                     </Flex>
                     <CourseList courses={courses} />
                 </Box>
-            </div>
+            </Box>
         </ThemeProvider>
 
     );
