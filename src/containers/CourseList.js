@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types';
 import CourseItem from '../components/CourseItem';
+import { Flex } from 'field-components'
 
 class CourseList extends PureComponent {
     static propTypes = {
@@ -13,9 +14,9 @@ class CourseList extends PureComponent {
 
     render() {
         const { courses } = this.props;
-        return <div className="course-list">
+        return <Flex justify="space-between" my={6}>
             {courses.map( (item, index) => <CourseItem key={index} onClick={e=>e} item={item} />)}
-        </div>;
+        </Flex>
     }
 }
 
