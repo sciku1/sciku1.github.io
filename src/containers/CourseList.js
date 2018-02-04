@@ -6,7 +6,6 @@ class CourseList extends PureComponent {
     static propTypes = {
         courses: PropTypes.array.isRequired
     };
-
     render() {
         const { courses } = this.props;
         return <div>
