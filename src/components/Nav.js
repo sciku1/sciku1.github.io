@@ -13,16 +13,26 @@ import {
 class Nav extends PureComponent {
     render () {
         return (
+          <Box
+            bg="n20"
+          >
             <Flex
                 align="center"
                 justify="space-between"
+                mw="1080px"
+                mx="auto"
                 py={3}
                 px={4}
-                bg="n20"
             >
               <Text fontWeight="600" fontSize="20px" lineHeight="24px">VRify</Text>
-              <Button small children="Get Started" intent="success" />
+              <Button
+                rounded
+                small
+                children="Get Started"
+                intent="success"
+              />
             </Flex>
+          </Box>
         );
     }
 }

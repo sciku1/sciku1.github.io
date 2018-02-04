@@ -14,11 +14,9 @@ class Header extends PureComponent {
             <Box
                 my={6}
                 bg="n900"
-                style={{borderRadius: '4px'}}
+                style={{borderRadius: '8px'}}
             >
-                <Flex
-                    align="center"
-                >
+                <Flex align="center">
                     <Box width="50%" mx={[3, 6]}>
                         <Text
                             lineHeight="1.167"
@@ -32,6 +30,8 @@ class Header extends PureComponent {
                         <Button
                             children="Try for Free Today"
                             intent="success"
+                            rounded
+                            large
                         />
                     </Box>
                     <Box

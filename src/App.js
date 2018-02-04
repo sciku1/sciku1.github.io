@@ -88,7 +88,7 @@ class App extends Component {
                     <Header />
                     <Flex
                         p={[4, 6]}
-                        bg="g300"
+                        bg="g400"
                         justify="space-between"
                         style={{borderRadius: '4px'}}
                     >
