@@ -75,7 +75,7 @@ class App extends Component {
     return (
         <ThemeProvider theme={theme}>
             <div className="App">
-                <CourseList courses={[]} />
+                <CourseList courses={courses} />
                 <Box p={4} mw="960px" mx="auto" bg="n100">
                     <Box mw="960px" mx="auto">
                         <Text>Test</Text>
@@ -114,6 +114,7 @@ class App extends Component {
                 </Box>
             </div>
         </ThemeProvider>
+
     );
   }
 }
