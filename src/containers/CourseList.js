@@ -1,11 +1,16 @@
 import React, { PureComponent } from 'react'
+import PropTypes from 'prop-types';
 import CourseItem from '../components/CourseItem';
 
 class CourseList extends PureComponent {
+    static propTypes = {
+        courses: PropTypes.array.isRequired
+    };
+
     render() {
-        const { data } = this.props;
+        const { courses } = this.props;
         return <div>
-            {data.map( item => <CourseItem data={item} />)}
+            {courses.map( item => <CourseItem data={item} />)}
         </div>;
     }
 }
