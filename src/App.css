@@ -129,3 +129,11 @@ footer.footer {
   padding-bottom: 4rem;
 }
 
+.course-list .content {
+  height: 0;
+  background-color: blue;
+}
+
+.course-list .content.open {
+  height: 500px;
+}
