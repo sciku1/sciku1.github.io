@@ -24,7 +24,12 @@ class CourseItem extends PureComponent {
                 <Text large mb={3} fontWeight="600">{name}</Text>
                 <div className="course-image" style={{
                     backgroundImage: `url(${image})`,
-                    borderRadius: '4px'
+                    borderRadius: '4px',
+                    backgroundSize: 'cover',
+                    height: 130,
+                    marginBottom: 12,
+                    backgroundPosition: 'center center',
+                    width: '100%'
                 }} />
 
                     {objectives.map( (objective, index) => <Text small mb={2} style={{ textAlign: "center" }} key={index}>{objective}</Text>)}
