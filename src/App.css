@@ -131,13 +131,8 @@ footer.footer {
 
 .course-list .content {
   height: 0;
-  background-color: blue;
 }
 
 .course-list .content.open {
   height: 500px;
-}
-
-.course-item {
-  
 }

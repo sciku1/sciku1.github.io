@@ -11,7 +11,7 @@ import {
     Text,
     Icon
 } from 'field-components'
-
+import Dozer from './img/dozer.jpeg';
 injectGlobal`
   * { box-sizing: border-box; }
   html {
@@ -31,6 +31,7 @@ injectGlobal`
 const courses = [
     {
       name: "Working with an Excavator",
+      image: Dozer,
       objectives: [
           "Straight Trench / Backfill",
           "Site Levels",
