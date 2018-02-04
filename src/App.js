@@ -12,6 +12,11 @@ import {
     Icon
 } from 'field-components'
 import Dozer from './img/dozer.jpeg';
+import Excavator from './img/excavator.jpeg';
+import Grader from './img/grader.jpg';
+import Loader from './img/loader.jpeg';
+
+
 injectGlobal`
   * { box-sizing: border-box; }
   html {
@@ -31,7 +36,7 @@ injectGlobal`
 const courses = [
     {
       name: "Working with an Excavator",
-      image: Dozer,
+      image: Excavator,
       objectives: [
           "Straight Trench / Backfill",
           "Site Levels",
@@ -43,6 +48,7 @@ const courses = [
     },
     {
         name: "Working with a Loader",
+        image: Loader,
         objectives: [
             "Backfilling and Leveling with a Loader",
             "Loading Trucks",
@@ -51,6 +57,7 @@ const courses = [
     },
     {
       name: "Working with a Bulldozer",
+        image: Dozer,
         objectives: [
             "Perform a 30m push to build access ramp",
             "Able to build a sump",
@@ -61,6 +68,7 @@ const courses = [
     },
     {
         name: "Working with a Grader",
+        image: Grader,
         objectives: [
             "Performing Figure 8 with tire",
             "Windrowing dirt",
