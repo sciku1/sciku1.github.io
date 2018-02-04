@@ -14,7 +14,7 @@ class CourseList extends PureComponent {
 
     render() {
         const { courses } = this.props;
-        return <Flex justify="space-between" my={6}>
+        return <Flex justify="space-between" my={6} style={{display: 'flex', justifyContent: 'space-between', margin: '48px 0'}}>
             {courses.map( (item, index) => <CourseItem key={index} onClick={e=>e} item={item} />)}
         </Flex>
     }

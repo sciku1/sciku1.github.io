@@ -1,11 +1,12 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import {
-    Flex,
     Button,
     Text,
     Image
 } from 'field-components'
+import Flex from './Flex'
+
 
 class CourseItem extends PureComponent {
     static propTypes = {
@@ -20,7 +21,9 @@ class CourseItem extends PureComponent {
     render() {
         const { onClick, item: { name, objectives, image } } = this.props;
         return(
-            <Flex px={4} py={3} bg="n0" w="100%" mx={1} direction="column" style={{borderRadius: '4px'}}>
+            <Flex px={4} py={3} bg="n0" w="100%" mx={1} direction="column"
+                style={{display: 'flex', borderRadius: '4px', flexDirection: 'column', padding: '16px 24px', width: '100%', backgroundColor: 'white', margin: '0 8px'}}
+            >
                 <Text large mb={3} fontWeight="600">{name}</Text>
                 <div className="course-image" style={{
                     backgroundImage: `url(${image})`,

@@ -1,20 +1,19 @@
 import React, { PureComponent } from 'react';
 import styled from 'styled-components'
 import {
-    Box,
-    Flex,
     Button,
     Text,
     Heading,
     Icon
 } from 'field-components'
-
+import Flex from './Flex'
 
 class Nav extends PureComponent {
     render () {
         return (
-          <Box
+          <div
             bg="n20"
+            style={{backgroundColor: '#f3f3f3'}}
           >
             <Flex
                 align="center"
@@ -23,6 +22,7 @@ class Nav extends PureComponent {
                 mx="auto"
                 py={3}
                 px={4}
+                style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', maxWidth: '1080px', margin: '0 auto', padding: '16px 24px'}}
             >
               <Text fontWeight="600" fontSize="20px" lineHeight="24px">VRify</Text>
               <Button
@@ -32,7 +32,7 @@ class Nav extends PureComponent {
                 intent="success"
               />
             </Flex>
-          </Box>
+          </div>
         );
     }
 }

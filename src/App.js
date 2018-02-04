@@ -2,11 +2,10 @@ import React, { Component } from 'react';
 import CourseList from './containers/CourseList';
 import Header from './components/Header'
 import Nav from './components/Nav'
+import Flex from './components/Flex'
 import { injectGlobal, ThemeProvider } from 'styled-components'
 import theme from './theme'
 import {
-    Box,
-    Flex,
     Text,
     Icon
 } from 'field-components'
@@ -35,32 +34,34 @@ class App extends Component {
   render() {
     return (
         <ThemeProvider theme={theme}>
-            <Box className="App" bg="n800">
+            <div className="App" bg="n800" style={{backgroundColor: '#282828'}}>
                 <Nav />
-                <Box p={4} mw="1080px" mx="auto">
+                <div p={4} mw="1080px" mx="auto"
+                    style={{padding: '24px', maxWidth: '1080px', margin: '0 auto'}}
+                >
                     <Header />
                     <Flex
                         p={[4, 6]}
                         bg="g400"
                         justify="space-between"
-                        style={{borderRadius: '4px'}}
+                        style={{display: 'flex', borderRadius: '4px', justifyContent: 'space-between', backgroundColor: '#2ECC40', padding: '48px 24px'}}
                     >
-                        <Flex align="center">
+                        <Flex align="center" style={{display: 'flex'}}>
                             <Icon type="Zap" color="white" />
                             <Text ml={2} large fontWeight="600">Equipment Simulators</Text>
                         </Flex>
-                        <Flex align="center">
+                        <Flex align="center" style={{display: 'flex'}}>
                             <Icon type="UserCheck" color="white" />
                             <Text ml={2} large fontWeight="600">Interactive Learning</Text>
                         </Flex>
-                        <Flex align="center">
+                        <Flex align="center" style={{display: 'flex'}}>
                             <Icon type="Cpu" color="white" />
                             <Text ml={2} large fontWeight="600">Emerging Technology</Text>
                         </Flex>
                     </Flex>
                     <CourseList courses={courses} />
-                </Box>
-            </Box>
+                </div>
+            </div>
         </ThemeProvider>
 
     );

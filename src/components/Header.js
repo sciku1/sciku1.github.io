@@ -1,23 +1,23 @@
 import React, { PureComponent } from 'react';
 import {
-    Box,
-    Flex,
     Button,
     Text,
     Image
 } from 'field-components'
+import Flex from './Flex'
 import HeaderImage from '../img/dozer.jpeg'
 
 class Header extends PureComponent {
     render () {
         return (
-            <Box
+            <div
                 my={6}
                 bg="n900"
-                style={{borderRadius: '8px'}}
+                className={this.props.className}
+                style={{backgroundColor: 'black', borderRadius: '8px', margin: '48px 0'}}
             >
-                <Flex align="center">
-                    <Box width="50%" mx={[3, 6]}>
+                <Flex align="center" className={this.props.className} style={{display: 'flex', alignItems: 'center'}}>
+                    <div width="50%" mx={[3, 6]} style={{margin: '0 48px', width: '50%'}}>
                         <Text
                             lineHeight="1.167"
                             fontSize="48px"
@@ -33,14 +33,14 @@ class Header extends PureComponent {
                             rounded
                             large
                         />
-                    </Box>
-                    <Box
+                    </div>
+                    <div
                         width="50%"
                         h="500px"
-                        style={{backgroundImage: `url(${HeaderImage})`, backgroundSize: 'cover', backgroundPosition: 'center', borderRadius: '4px'}}
+                        style={{backgroundImage: `url(${HeaderImage})`, backgroundSize: 'cover', backgroundPosition: 'center', borderRadius: '4px', width: '50%', height: '500px'}}
                     />
                 </Flex>
-            </Box>
+            </div>
         );
     }
 }
