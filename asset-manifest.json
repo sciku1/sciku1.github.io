@@ -1,7 +1,8 @@
 {
-  "main.css": "static/css/main.43acd8ba.css",
-  "main.css.map": "static/css/main.43acd8ba.css.map",
-  "main.js": "static/js/main.e9fd00cf.js",
-  "main.js.map": "static/js/main.e9fd00cf.js.map",
-  "static/media/worker-machinery.jpg": "static/media/worker-machinery.9090a749.jpg"
+  "main.js": "static/js/main.5612674d.js",
+  "main.js.map": "static/js/main.5612674d.js.map",
+  "static/media/dozer.jpeg": "static/media/dozer.d57530b3.jpeg",
+  "static/media/excavator.jpeg": "static/media/excavator.aec163fe.jpeg",
+  "static/media/grader.jpg": "static/media/grader.5079f4f0.jpg",
+  "static/media/loader.jpeg": "static/media/loader.ad830f6e.jpeg"
 }
